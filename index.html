@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app/scss/style.css">
+  <title>Frontend Internship</title>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="container container--pall flex flex-jc-c ">
+      <div class="flex flex-jc-sb ">
+        <a href="/" class="header__logo">
+          <img src="img/nav-logo.png" alt="Logo" />
+        </a>
+        <div class="flex flex-jc-sb flex-ai-c hide-for-mobile">
+          <div class="header__links">
+            <a href="#">Info</a><a href="#">About us</a><a href="#">Contact</a>
+          </div>
+          <div class="header__links2 flex-jc-c flex-ai-c">
+            <a href="#">LOGIN</a>
+            <img src="img/nav-flag.png" alt="Logo" />
+            <a href="#" class="header__links2 hide-for-mobile">EN-UK</a>
+            <a href="#">(£)</a>
+          </div>
+        </div>
+
+        <div class="flex hide-for-desktop flex-fd-cr flex-ai-c">
+          <div class="header__links__mob flex-jc-c flex-ai-c">
+            <a href="#">Info</a><a href="#">About us</a><a href="#">Contact</a>
+          </div>
+          <div class="header__links__mob2 flex-jc-c flex-ai-c">
+            <a href="#">LOGIN</a>
+            <img src="img/nav-flag.png" alt="Logo" />
+            <a href="#" class="header__links2 hide-for-mobile">EN-UK</a>
+            <a href="#">(£)</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero__picture">
+      <img id="carousel" class="hero__image">
+    </div>
+    <div class="hero__arrows">
+      <img src='img/arrowLeft.png' id="arrow1" class="arrow1">&nbsp;&nbsp;
+      <img src='img/arrowRight.png' id="arrow2" class="arrow2">
+    </div>
+
+    <div class="hero__text container--py-sm ">
+      <h1>
+        Enjoy our hot summer deals
+      </h1>
+      <div class="hero__text__offer">
+        <p>
+          from £69
+        </p>
+        <p class="offer__small">.50</p>
+      </div>
+      <a href="#" class="button hero__cta">Book now!</a>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="feature__content container container--py-sm flex flex-ai-c flex-jc-c">
+
+      <div class="feature__intro">
+        <p>
+          LOW COST DOESN'T MEAN CHEAP
+        </p>
+        <h2>Fly smart, fly with Grean Earth</h2>
+      </div>
+
+      <div class="feature__grid">
+
+        <div class="feature__item">
+          <div class="feature__icon"><img src="img/offer1.png" /></div>
+          <div class="feature__text flex flex-jc-c">
+            <div class="feature__title">
+              Recinable seats
+            </div>
+            <div class="feature__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nostrum odio provident. Dolore incidunt
+              repellendus sint.
+            </div>
+          </div>
+        </div>
+
+        <div class="feature__item">
+          <div class="feature__icon"><img src="img/offer2.png" /></div>
+          <div class="feature__text flex flex-jc-c">
+            <div class="feature__title">
+              Plenty of legroom
+            </div>
+            <div class="feature__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nostrum odio provident. Dolore incidunt
+              repellendus sint.
+            </div>
+          </div>
+        </div>
+
+        <div class="feature__item">
+          <div class="feature__icon"><img src="img/offer3.png" /></div>
+          <div class="feature__text flex flex-jc-c">
+            <div class="feature__title">
+              Free cabine luggage
+            </div>
+            <div class="feature__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nostrum odio provident. Dolore incidunt
+              repellendus sint.
+            </div>
+          </div>
+        </div>
+
+        <div class="feature__item">
+          <div class="feature__icon"><img src="img/offer4.png" /></div>
+          <div class="feature__text flex flex-jc-c">
+            <div class="feature__title">
+              Friendly crew
+            </div>
+            <div class="feature__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nostrum odio provident. Dolore incidunt
+              repellendus sint.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="articles">
+    <div class="article__content container container--pall">
+
+      <h3 class="article__h3">Showing our offers from</h3>
+
+      <div class="article__grid">
+        <a href="#" class="article__item">
+          <div class="article__image" style="background-image: url('img/london.png')">
+            <img class="label" src="img/label.png " />
+          </div>
+          <div class="article__text flex-jc-c">
+            <div class="article__author">
+              <p class="article__title">London</p>
+              <p class="article__description">from £59</p>
+            </div>
+            <div class="article__offer">Book now <img src="img/arrow.png " /></div>
+          </div>
+        </a>
+
+        <a href="#" class="article__item">
+          <div class="article__image" style="background-image: url('img/hamburg.png')">
+          </div>
+          <div class="article__text flex-jc-sb">
+            <div class="article__author">
+              <p class="article__title">Hamburg</p>
+              <p class="article__description">from £79</p>
+            </div>
+            <div class="article__offer">Book now <img src="img/arrow.png " /></div>
+          </div>
+        </a>
+
+        <a href="#" class="article__item">
+          <div class="article__image" style="background-image: url('img/tropico.png')">
+          </div>
+          <div class="article__text flex-jc-c">
+            <div class="article__author">
+              <p class="article__title">Alicante</p>
+              <p class="article__description">from £89</p>
+            </div>
+            <div class="article__offer">Book now <img src="img/arrow.png " /></div>
+          </div>
+        </a>
+
+        <a href="#" class="article__item">
+          <div class="article__image" style="background-image: url('img/milano.png')">
+          </div>
+          <div class="article__text flex-jc-c">
+            <div class="article__author">
+              <p class="article__title">Milano</p>
+              <p class="article__description">from £119</p>
+            </div>
+            <div class="article__offer">Book now <img src="img/arrow.png " /></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="inspire">
+    <div class="container container--py-sm flex flex-jc-c flex-ai-c flex-fd-r">
+      <div>Don't know where to go?</div>&nbsp;
+      <div class="inspire__bold">Let us inspire you</div>
+    </div>
+  </section>
+
+  <section class="premium">
+    <div class="container container--pall flex flex-ai-c">
+      <div class="premium__text">
+        <p class="premium__text__p1">QUALITY FROM THE INSIDE</p>
+        <h2>Travel the way you want</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis ea explicabo assumenda consectetur atque itaque, sunt inventore saepe ullam accusantium eligendi corporis ipsum praesentium rerum quaerat.</p>
+      </div>
+      <div class="premium__services"> 
+        <p>View all services & upgrades</p>
+        <div>
+          <div class="tab ">
+            <button class="tablinks hide-for-mobile" onclick="openOffer(event, 'Regular')">Regular</button>
+            <button class="tablinks hide-for-mobile" onclick="openOffer(event, 'Plus')">Plus</button>
+            <button class="tablinks hide-for-mobile" onclick="openOffer(event, 'Premium')">Premium</button>
+          </div>
+          
+          <!-- Tab content -->
+          <div id="Regular" class="tabcontent flex flex-fd-r flex-ai-c flex-jc-sb">
+            <img class="tabcontent__img" src="img/kid.png" alt="">
+            <div class="tabcontent__offer show-for-mobile">Regular</div>
+            <div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/done.png" alt="">
+                <p>Reclinable seats</p>
+              </div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/done.png" alt="">
+                <p>1 Hand luggage</p>
+              </div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/done.png" alt="">
+                <p>Extra leg room</p>
+              </div>
+            </div>
+            <div class="tabcontent__style2">
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/money.png" alt="">
+                <p>Extra cabin luggage</p>
+              </div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/money.png" alt="">
+                <p>Extra hold luggage</p>
+              </div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/money.png" alt="">
+                <p>Lounge access</p>
+              </div>
+            </div>
+          </div>
+          
+          <div id="Plus" class="tabcontent flex flex-fd-r flex-ai-c flex-jc-sb">
+            <img class="tabcontent__img" src="img/kid.png" alt="">
+            <div class="tabcontent__offer show-for-mobile">Plus</div>
+            <div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/done.png" alt="">
+                <p>Reclinable seats</p>
+              </div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/done.png" alt="">
+                <p>1 Hand luggage</p>
+              </div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/done.png" alt="">
+                <p>Extra leg room</p>
+              </div>
+            </div>
+            <div class="tabcontent__style2">
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/money.png" alt="">
+                <p>Extra cabin luggage</p>
+              </div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/money.png" alt="">
+                <p>Extra hold luggage</p>
+              </div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/money.png" alt="">
+                <p>Lounge access</p>
+              </div>
+            </div>
+          </div>
+          
+          <div id="Premium" class="tabcontent flex flex-fd-r flex-ai-c flex-jc-sb">
+            <img class="tabcontent__img" src="img/kid.png" alt="">
+            <div class="tabcontent__offer show-for-mobile">Premium</div>
+            <div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/done.png" alt="">
+                <p>Reclinable seats</p>
+              </div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/done.png" alt="">
+                <p>1 Hand luggage</p>
+              </div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/done.png" alt="">
+                <p>Extra leg room</p>
+              </div>
+            </div>
+            <div class="tabcontent__style2">
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/money.png" alt="">
+                <p>Extra cabin luggage</p>
+              </div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/money.png" alt="">
+                <p>Extra hold luggage</p>
+              </div>
+              <div class="tabcontent__style flex flex-fd-r flex-ai-c">
+                <img src="img/money.png" alt="">
+                <p>Lounge access</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <footer class="footer1">
+    <div class="container ">
+      <div class="footer1__section1 flex flex-jc-sb flex-ai-c">
+        <div class="footer1__text">Subscribe to our newsletter</div>
+        <form>
+          <input type="text" placeholder="Enter your email adress">
+          <input type="submit" value="Send >">
+        </form>
+        <div class="footer1__social">
+          <a class="footer1__text hide-for-tablet">Follow us</a>
+          <a href="#" class="hide-for-tablet"><img src="img/facebook.png " /></a>
+          <a href="#" class="hide-for-tablet"><img src="img/twitter.png " /></a>
+          <a href="#" class="hide-for-tablet"><img src="img/instagram.png " /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer2">
+    <div class="container">
+      <div class="footer2__section2">
+
+        <div class="footer2__social">
+          <a class="footer2__text show-for-tablet">Follow us</a>
+
+          <div class="footer2__tablet">
+            <a href="#" class="show-for-tablet"><img src="img/facebook-m.png " /></a>
+            <a href="#" class="show-for-tablet"><img src="img/twitter-m.png " /></a>
+            <a href="#" class="show-for-tablet"><img src="img/instagram-m.png " /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer2__section2__social">
+        <a href="#">
+          <img src="img/mc.png" />
+        </a>
+        <a href="#">
+          <img src="img/visa.png" />
+        </a>
+        <a href="#">
+          <img src="img/amex.png" />
+        </a>
+        <a href="#">
+          <img src="img/paypal.png" />
+        </a>
+      </div>
+
+      <div class="footer2__copyright">
+        <a href="#">Terms & Privacy</a>
+        <a href="#">Site Map</a>
+      </div>
+
+    </div>
+    </div>
+  </footer>
+  <section class="blue"></section>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+.header {
+  position: relative;
+
+  nav {
+    position: relative;
+    background-color: $white;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
+  }
+
+  &__logo {
+
+    img {
+      margin-right: 20px;
+      width: 3.8125rem;
+      height: auto;
+    }
+
+  }
+
+  &__links {
+
+    a {
+      position: relative;
+      font-size: $font-lg;
+      font-weight: 600;
+      color: $darkBlue;
+      transition: color 300ms ease-in-out;
+
+      &:not(:last-child){
+        margin-right: 32px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        background: linear-gradient(to right, $gradientBlue, $Cyan);
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+      &:hover {
+        color: rgb(33, 96, 231);
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__links2 {
+
+    a {
+      position: relative;
+      font-size: $font-med;
+      font-weight: 600;
+      color: $grayishBlue;
+
+      &:first-child{
+        margin-right: 32px;
+      }
+
+      &:not(:last-child){
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__links__mob {
+    padding-top: 15px;
+    a {
+      position: relative;
+      font-size: $font-med;
+      font-weight: 700;
+      color: $darkBlue;
+      &:not(:last-child){
+        margin-right: 32px;
+      }
+    }
+  }
+
+  &__links__mob2 {
+    
+    a {
+      position: relative;
+      font-size: $font-med;
+      font-weight: 600;
+      color: $grayishBlue;
+      
+      &:not(:last-child){
+        margin-right: 32px;
+      }
+    }
+  }
+}
+

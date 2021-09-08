@@ -1,0 +1,267 @@
+.footer1 {
+  background-color: $gradientBlue;
+  color: $white;
+  padding: 2.5rem;
+  text-align: center;
+
+ &__section1 {
+
+  form{    
+  @include breakpoint-down(medium){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  }
+   
+  @include breakpoint-down(medium){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ }
+
+  .container {
+
+    @include breakpoint-down(large){
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+
+  input[type=text], textarea{
+    padding:0.625rem;
+    margin:0.625rem 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px;
+    border-color: #CBD5EB;
+    width: 15rem;
+    color:white;
+    font-size: large;
+
+     
+  @include breakpoint-down(medium){
+   width: 30rem;
+  }
+
+  @include breakpoint-down(small){
+    width: 20rem;
+   }
+  }
+
+  input:focus{
+    outline: none;
+  }
+  input::placeholder{
+    font-size: $font-med;
+    color: #3156B0;
+  }
+
+  input[type=submit] {
+    padding:0.625rem;
+    margin:0.625rem 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px;
+    border-color: #CBD5EB;
+    position:relative;
+    right: 0.3125rem;
+    color: white;
+    font-size: $font-lg;
+    cursor: pointer;
+
+    @include breakpoint-down(medium){
+      width: 20rem;
+      background-color: $white;
+      color: $gradientBlue;
+      font-weight: 600;
+      right: 0;
+     }
+  }
+
+  &__social {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    a {
+      &:not(:last-child){
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__text{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+}
+
+.footer2 {
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 5rem;
+
+  .container{
+    @include breakpoint-up(large){
+      display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+  }
+
+ 
+
+  @include breakpoint-down(medium){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+  }
+
+
+  &__social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__tablet{
+   a{
+    &:not(:last-child){
+      margin-right: 1.875rem;
+    }
+   }
+
+   @include breakpoint-down(medium){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    margin: 2rem;
+   }
+
+  }
+
+  &__text{
+    color: $gradientBlue;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+
+
+  &__section2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint-down(medium){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: fit-content;
+      margin: 2rem;
+     }
+
+     &__social{
+      align-items: center;
+      a{
+        &:not(:last-child){
+          margin-right: 3rem;
+        }
+      }
+
+      @include breakpoint-down(medium){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        a{
+          &:not(:last-child){
+            margin-right: 5.375rem;
+          }
+         }
+      
+       }
+
+       @include breakpoint-down(small){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        a{
+          &:not(:last-child){
+            margin-right: 4.7rem;
+          }
+         }
+      
+       }
+     }
+  }
+
+  &__copyright {
+    color: $grey;
+    font-size: medium;
+    
+    a{
+      color: $grey;
+      font-weight: 600;
+      &:not(:last-child){
+        margin-right: 2.5rem;
+      }
+     }
+
+     @include breakpoint-up(large){
+        margin-left: 28rem;
+      }
+
+
+    @include breakpoint-down(medium){
+    margin-top: 2.5rem;
+    font-size: large;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+
+    a{
+      color: $grey;
+      &:not(:last-child){
+        margin-right: 4.375rem;
+        margin-left: 3.375rem;
+      }
+     }
+    }
+
+    @include breakpoint-down(small){
+      margin-top: 2.5rem;
+      font-size: large;
+      margin-bottom: 2.5rem;
+      font-weight: 600;
+  
+      a{
+        color: $grey;
+        &:not(:last-child){
+          margin-right: 3.375rem;
+          margin-left: 2.7rem;
+        }
+       }
+      }
+  } 
+}
+
+.blue{
+  height: 0.6rem;
+  background-color: $Cyan;
+}

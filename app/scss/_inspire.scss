@@ -1,0 +1,22 @@
+.inspire{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $darkBlue;
+    
+
+    &__bold{
+        color: $gradientBlue;
+        font-weight: 700;
+        border-bottom: dashed;
+        border-image: url('img/stripes.png') 2 round;       
+    }
+    @include breakpoint-down(small){
+        .container{
+            flex-direction: column;
+            line-height: 1;
+        }
+        &__bold{
+            padding-bottom: 0.2rem;
+        }
+    }
+}

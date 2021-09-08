@@ -1,0 +1,113 @@
+.hero {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+
+
+  &__picture{
+    position: relative;
+    height: max-content;
+  }
+
+  .hero__image{
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 5;
+  }
+
+  &__arrows{
+    position: absolute;
+    bottom: 30rem;
+    right: 10rem;
+    z-index: 10;
+
+    @include breakpoint-down(medium){
+      position: absolute;
+    bottom: 40rem;
+    right: 1rem;
+    }
+
+    @include breakpoint-down(small){
+      position: absolute;
+      bottom: 44rem;
+      right: 1rem;
+    }
+  }
+
+  .arrow1, .arrow2{
+    @include breakpoint-down(small){
+      width: 2rem;
+    height: auto;
+    }
+  }
+
+ 
+
+  &__text {
+    position: absolute;
+    top:9rem;
+    left:10rem;
+    width: 30rem;
+    text-align: baseline;
+    z-index: 10;
+
+    @include breakpoint-down(medium){
+      top:5rem;
+      left:5rem;
+    }
+
+    @include breakpoint-down(small){
+      top:4rem;
+      left:1rem;
+      width: 15rem;
+    }
+
+    h1{
+      line-height: 0.9;
+      font-weight: 700;
+      margin:0;
+
+       @include breakpoint-down(medium){
+        font-size: 2.8rem;
+       }
+
+       @include breakpoint-down(small){
+        font-size: 1.7rem;
+       }
+    }
+
+    &__offer{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: $white;
+      font-size: x-large;
+
+      @include breakpoint-down(small){
+        font-size: large;
+       }
+
+      p{
+        margin-top: 0.625rem;
+        margin-bottom: 0.625rem;
+        font-weight: 400;
+
+        @include breakpoint-down(small){
+          margin-top: 0.425rem;
+          margin-bottom: 0.425rem;
+         }
+      }
+      
+    }
+
+    
+  }
+}
+
+.offer__small{
+  font-size: small;
+}
