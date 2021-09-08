@@ -34,7 +34,7 @@ leftBtn.addEventListener("click", moveLeft);
 function openOffer(evt, offerName) {
 
     var i, tabcontent, tablinks;
-  
+    //just wanted to say hello
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
